@@ -32,7 +32,11 @@
             }
             else if (operation == '/')
             {
-                
+                 if (num2 == 0)
+                {
+                    Console.WriteLine("Error: Division by zero is not allowed.");
+                    continue;
+                }
                 double quotient = num1 / num2;
                 Console.WriteLine("The quotient is: " + quotient);
             }
